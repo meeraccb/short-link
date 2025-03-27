@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener and Image Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener & Image Uploader</h1>
+
+        <!-- URL Shortener Section -->
+        <div class="url-shortener">
+            <h2>Shorten Your URL</h2>
+            <input type="url" id="longUrl" placeholder="Enter your long URL" required>
+            <button onclick="shortenUrl()">Shorten URL</button>
+            <p id="shortUrlResult"></p>
+            <button id="copyButton" style="display:none;" onclick="copyUrl()">Copy Short URL</button>
+        </div>
+
+        <!-- Image Upload Section -->
+        <div class="image-upload">
+            <h2>Upload an Image</h2>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="uploadImage()">Upload Image</button>
+            <p id="imageResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
